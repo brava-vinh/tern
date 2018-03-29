@@ -17,8 +17,10 @@ class Layer(object):
         self.__sha = sha
         self.__packages = []
 
+    def foo:
+        return 1
     @property
-    def sha(self):
+    def sha2(self):
         return self.__sha
 
     @property

@@ -14,7 +14,7 @@ import subprocess
 import tarfile
 import time
 import yaml
-
+# diff 1
 from contextlib import contextmanager
 
 import utils.constants as const
@@ -406,6 +406,11 @@ def extract_image_metadata(image_tag_string):
     temp_path = os.path.abspath(const.temp_folder)
     result = docker_command(save, image_tag_string)
     if not result:
+        # Another diff here 1
+        # Another diff here 2
+        # Another diff here 3
+        # Another diff here 4
+        # Another diff here 5
         success = False
     else:
         with tarfile.open(fileobj=io.BytesIO(result)) as tar:

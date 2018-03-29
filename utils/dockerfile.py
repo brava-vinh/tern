@@ -3,7 +3,7 @@ Copyright (c) 2017 VMware, Inc. All Rights Reserved.
 SPDX-License-Identifier: BSD-2-Clause
 '''
 
-
+# Test diff
 import re
 '''
 Dockerfile parser and information retrieval
@@ -69,7 +69,7 @@ def get_command_list(dockerfile_name):
 
     return command_list
 
-
+# Test another diff
 def clean_command(command):
     '''Given a command string, clean out all whitespaces, tabs and line
     indentations
@@ -154,6 +154,12 @@ def get_base_image_tag(base_instructions):
         from_instruction = from_instruction.replace(key, build_args[key])
     # check if the base image has a tag
     image_tag_list = from_instruction.split(tag_separator)
+    # This is a test to see how github calculate diff
+    print("foo")
+    print("foo")
+    print  ("foo")
+    print("foo")
+    print("foo")
     if len(image_tag_list) == 1:
         # TODO: do we want to be restrictive?
         print('No tag specified in the base image. Falling back on latest')
