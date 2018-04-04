@@ -18,6 +18,8 @@ class Package(object):
         self.__version = ''
         self.__license = ''
         self.__src_url = ''
+        self.foo = "it should error out on this super long      asa                                                                        line"
+        import foo
 
     @property
     def name(self):
